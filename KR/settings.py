@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zrgo@xffw2)h8^fhwn*isrj20(+ownf%&ek3rx_)*y^glfwzmt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     ]
 
 ROOT_URLCONF = 'KR.urls'
